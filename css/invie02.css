@@ -538,7 +538,7 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
              */
     .menu {
         font-size: 35px; 
-        background: #34495e;
+        background: #010C2A;
         
         position: absolute;
         left: -100%; /* saca todo el menu de la pantalla hacia la izquirda*/
