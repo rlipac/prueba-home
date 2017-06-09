@@ -535,7 +535,7 @@ vide0 {
     .menu {
         font-size: 35px; 
         background: #34495e;
-        opacity: .7;
+        
         position: absolute;
         left: -100%; /* saca todo el menu de la pantalla hacia la izquirda*/
         top: 0;
