@@ -354,16 +354,16 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
     z-index: 3;
 }
 
-vide0 {
+ /* vide0 {
     width: 100%;
-}
-
-.video-responsive-contenedor {
+ }
+ 
+ .video-responsive-contenedor {
     position: relative;
     padding-top: 56.25%; 
-}
-
-.video-responsive-rsc {
+ }
+ 
+ .video-responsive-rsc {
     position: absolute;
     left: 0;
     right: 0;
@@ -372,7 +372,7 @@ vide0 {
     width: 100%;
     height: 100%;
     
-}
+ }  */
 
  @media screen and (max-width: 800px) {
      
