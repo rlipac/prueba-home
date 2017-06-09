@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<htm es>
+    <head>
+        <title>Invie-Home</title>
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500i|Droid+Serif:700" rel="stylesheet">
+        <link rel="stylesheet" href="css/invie02.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!-- <link rel="stylesheet"  media="(max-width: 500px)" href="css/media-querie.css"> -->
+     </head>
+    <body>
+       <div class="background">
+           
+           <section id="portada " class="portada"> <!--portada-->
+
+            <header id="header" class="header contenedor"><!--header-->           
+
+                     <figure class="logotipo"><!--   logotipo-->
+                        <img src="images/invie.png" width="186" height="60"/ alt="logotipo_invie">
+                    </figure>
+                    <span class="burguer-button icon-menu" id="burguer-button"></span>
+                    <nav class="menu " id="menu"><!-- menu-->
+                         <ul>
+                             <li>
+                             <a href="index.html">Home</a>
+                             </li>
+                             <li>
+                             <a href="precios.html">Precios</a>
+                             </li>
+                             <li>
+
+                             <a  href="#guitarras">Guitarras</a>
+                             </li> 
+                         </ul>
+                     </nav>  
+
+               </header>
+
+                    <div class="contenedor">
+                         <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- titulo-->
+                         <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser - Toma el control -</h3> <!--reesume-->
+
+                         <a class="button"  href="#guitarras">Conoce mas</a><!--boton--> 
+                    </div>
+
+
+
+
+
+            </section> 
+         
+           
+       </div>
+         
+         
+        <section id="guitarras" class="guitarras contenedor"> <!--guittarras-->
+         <h2>Nueatras guitarras</h2><!--titulo-->
+         <div class="video-responsive-contenedor">
+             
+        <iframe class="video-responsive-rsc"  src="https://www.youtube.com/embed/H2gL0cJ-ZzY" frameborder="0" allowfullscreen></iframe>
+             
+         </div>
+        
+         <video src="video/BonJovi.mp4"></video>
+          <article class="guitarra">
+              <img  class="derecha" data-src="images/invie-acustica.png" alt="guiottarra_acustica" width="200"/>
+                <div class="contenedor-acustica">
+                    <h3 class="title-b">Invie Acusticas</h3><!--guittara1-->
+                   <ol>
+                       <li>estilo vintage</li>
+                       <li>madera pura</li>
+                       <li>estuche de aluminio puro</li>
+                   </ol>   
+                    
+                </div>
+                
+          
+          </article>
+          
+          <article class="guitarra">
+                <img class="izquierda" data-src="images/invie-classic.png" alt="guittarra_clasica" width="200"/>
+                <div class="contenedor-clasica">
+                  <h3 class="title-b">Invie Clasicas</h3><!--guitarra2-->
+                    <ol>
+                       <li>estilo vintage</li>
+                       <li>liviana</li>
+                       <li>inicia tu vida musical</li>
+                    </ol>
+                </div>     
+          
+          </article>
+          
+        </section>
+       
+        
+    <footer class="footer">
+
+       <div class="contenedor">
+
+            <div class="contacto">
+
+                <!-- caja numero 1--
+                logotipo
+                telefono
+                email -->
+        
+                <img data-src="images/invie-white.png" alt="logotipo blanco"/>
+                <a href="tel:+00511983713132"><strong>Telefono</strong><span>00511983720100</span></a>
+                <a href="mailto:fundacion.pe@telefonica.com"><strong>E-mail</strong><span>contactos</span></a>
+             </div>
+             <form class="formulario">
+               
+                <div class="col1">
+                            
+                          <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Su Nombre" id="nombre"/>
+                          <label for="email">E-mail</label>
+                                <input type="email" placeholder="Email" id="email" />
+
+                           <div class="sexo">
+
+                            <label for="mujer">
+                                <input type="radio" id="mujer" checked name="sexo" value="mujer"/>Mujer 
+                            </label>
+
+                            <label for="hombre">
+                                <input type="radio" id="hombre" name="sexo" value="hombre"/>Hombre
+                            </label>  
+
+                            </div>        
+
+                            <div class="intereses">
+                            <label for="cotizacion">
+                               <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"/> cotizacion
+                            </label>
+
+                            <label for="reclamos">
+                               <input type="checkbox" id="creclamos" name="intereses" value="reclamos"/> reclamos
+                            </label>
+
+                            <label for="comentarios">
+                               <input type="checkbox" id="comentarios" name="intereses" value="comentarios"> comentarios
+                            </label>
+                            <label for="otros">
+                               <input type="checkbox" id="otros" name="intereses" value="otros"> otros
+                            </label>
+
+                          </div>
+
+                </div> 
+                   
+               
+                <div class="col2"><!-- caja text area-->
+                   <label for="comentarios">Comentarios</label>
+                     <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+                     <input type="submit" value="Enviar" class="button btnuno"/>
+                    
+                </div>    
+             </form>
+      
+       </div>
+    
+        
+    </footer>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+        
+         <script>
+                   
+             var consulta = window.matchMedia('(max-width: 500px)');
+             consulta.addListener(mediaQuery);      
+                
+            var $burguerButton = document.getElementById('burguer-button'); 
+             var $menu = document.getElementById('menu');
+             
+                 $burguerButton.addEventListener('touchstart', function toggleMenu() {
+                 $menu.classList.toggle('active')                             
+                 });
+             
+             function mediaQuery() {
+                 if (consulta.matches) 
+                 {
+                     console.log('secumpluio la condicion') 
+                    $burguerButton.addEventListener('touchstart', function toggleMenu() {
+                                              
+                 });
+                 } else {
+                     
+                     console.log('no se cumplio la condicion');
+                     $burguerButton.removeEventListener('touchstart', function toggleMenu() {
+                      
+                                                 
+                 });     
+                 }
+             }
+             
+             mediaQuery();
+           /*/  esta funcion desplega el menu */
+             
+             /*/ $burguerButton.addEventListener('que evento queremos ecuchar', que quremos hacer) */ 
+             
+             
+             
+             /*/  lazy loading*/
+             
+             var bLazy = new Blazy( {
+                 selector:'img'
+                 
+             });
+              
+        </script>
+          
+    </body>
+</htm>

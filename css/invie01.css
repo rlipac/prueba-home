@@ -1,0 +1,58 @@
+/* *tipo de selector {
+    propiedad1: valor1;
+    propiedad2: valor2;
+} */
+
+/* selector universal */
+
+* {
+    border: 1px solid #95a5a6;
+    margin: 10px;
+}
+
+/* selector de etiqueta */
+
+header {
+    background:#2980b9;
+}
+section {
+    background:#2ecc71;
+}
+
+
+/* selector decesdente */
+
+article h3 {
+    color:red;
+}
+
+/* selector de clase */
+
+.title-a {
+    background: yellow;
+}
+
+.title-b {
+    background: black;
+}
+
+.title-c {
+    background: blue;
+}
+
+/* selector de id */
+
+#header {
+    border: 11px solid black;
+}
+
+#portada {
+    border: 11px solid red;
+}
+
+#guitarras {
+    border: 11px solid pink;
+}
+
+
+
