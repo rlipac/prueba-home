@@ -4,19 +4,19 @@
         <title>Invie - Precios</title>
         <meta charset="utf-8"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500i|Droid+Serif:700" rel="stylesheet">
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="css/invie02.css"/>
      </head>
     <body>
        <div class="background precios">
            
            <header id="header" class="header contenedor"><!--header--> 
-          
-            
-                  <figure class="logotipo"><!--   logotipo-->
+              <div class="contenedor">
+                    <figure class="logotipo"><!--   logotipo-->
                     <img src="images/invie.png" width="186" height="60"/ alt="logotipo_invie">
                   </figure>
-                 <nav class="menu"><!-- menu-->
+                   <span class="burguer-button icon-menu" id="burguer-button"></span>
+                 <nav class="menu" id="menu"><!-- menu-->
                      <ul>
                          <li>
                          <a href="index.html">Home</a>
@@ -30,7 +30,11 @@
 
 
                      </ul>
-                 </nav>
+                 </nav> 
+                  
+              </div>
+            
+               
 
           </header>
            
@@ -144,6 +148,52 @@
     
         
     </footer>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+        
+         <script>
+                   
+             var consulta = window.matchMedia('(max-width: 500px)');
+             consulta.addListener(mediaQuery);      
+                
+            var $burguerButton = document.getElementById('burguer-button'); 
+             var $menu = document.getElementById('menu');
+             
+                 $burguerButton.addEventListener('touchstart', function toggleMenu() {
+                 $menu.classList.toggle('active')                             
+                 });
+             
+             function mediaQuery() {
+                 if (consulta.matches) 
+                 {
+                     console.log('secumpluio la condicion') 
+                    $burguerButton.addEventListener('touchstart', function toggleMenu() {
+                                              
+                 });
+                 } else {
+                     
+                     console.log('no se cumplio la condicion');
+                     $burguerButton.removeEventListener('touchstart', function toggleMenu() {
+                      
+                                                 
+                 });     
+                 }
+             }
+             
+             mediaQuery();
+           /*/  esta funcion desplega el menu */
+             
+             /*/ $burguerButton.addEventListener('que evento queremos ecuchar', que quremos hacer) */ 
+             
+             
+             
+             /*/  lazy loading*/
+             
+             var bLazy = new Blazy( {
+                 selector:'img'
+                 
+             });
+              
+        </script>
           
     </body>
 </htm>

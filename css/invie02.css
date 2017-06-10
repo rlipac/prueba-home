@@ -342,7 +342,7 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
 }
 
 .burguer-button {
-   
+    color: white;
     width: 50px;
     border-radius: 50%;
     line-height: 50px;
@@ -527,6 +527,12 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
       /* Portada */
     
     .portada .contenedor {
+        position: static;
+    }
+    .header {
+        position: static;
+    }
+    .header .contenedor {
         position: static;
     }
     
