@@ -379,6 +379,25 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
 
  @media screen and (max-width: 800px) {
      
+     /* .tabla precion */
+     .tabla {
+        /*  margin-right:  0;
+         margin-left: 0;
+         margin-bottom: 0px;
+         margin-top: 0px; */
+         
+         margin: 10px 10px;
+         padding-bottom: 0;
+         padding-top: 0;
+     }
+      
+     .tabla .contenedor {
+         overflow: auto;
+         border: 1px solid #283745;
+     }
+     
+     /* .tabla precion */
+     
      /* Portada */
      
      .titulo {
