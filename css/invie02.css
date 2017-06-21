@@ -356,8 +356,9 @@ background: -ms-linear-gradient(45deg, rgba(241,111,92,1) 0%, rgba(241,111,92,1)
     z-index: 3;
 }
 
-   vide0 {
+   video {
     width: 100%;
+    margin-top: 20px;
    }
   
  .video-responsive-contenedor {
